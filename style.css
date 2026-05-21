@@ -5,6 +5,9 @@
     font-family: "Segoe UI", sans-serif;
 }
 
+
+canvas
+{ width: 100vw; height: 100vh; display: block; }
 :root {
     --bg: #f4f6fb;
     --card: #ffffff;
