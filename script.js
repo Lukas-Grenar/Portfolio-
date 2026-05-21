@@ -33,7 +33,7 @@ const loader = new GLTFLoader();
 
 // Nahraď 'cesta/k/tvemu_modelu.glb' skutečnou cestou k souboru
 loader.load(
-    , 
+    img/Untitled.glb , 
     (gltf) => {
         const model = gltf.scene;
         scene.add(model);
