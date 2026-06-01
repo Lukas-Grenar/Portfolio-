@@ -7,18 +7,18 @@ let textSkore = document.getElementById("skore");
 
 
 btnSusenka.addEventListener("click", function() {
-    susenky += silaKliknuti; // Úprava logiky (stavu)
-    textSkore.textContent = susenky; // Aktualizace UI
+    susenky += silaKliknuti; 
+    textSkore.textContent = susenky; 
 });
 
 let btnBabicka = document.getElementById("btn-babicka");
 let cenaBabicka = 10;
 
 btnBabicka.addEventListener("click", function() {
-    // Validační podmínka
+    
     if (susenky >= cenaBabicka) {
-        susenky -= cenaBabicka; // Platba
-        silaKliknuti++;         // Aplikace vylepšení (silnější klik)
+        susenky -= cenaBabicka; 
+        silaKliknuti++;         
         
         textSkore.textContent = susenky; 
         
@@ -41,11 +41,11 @@ btnTovarna.addEventListener("click", function() {
         cenaTovarna += 50;
         btnTovarna.textContent = `Koupit Továrnu (Cena: ${cenaTovarna})`;
         
-        // Spuštění intervalu pro zakoupenou jednotku
+        
         setInterval(function() {
             susenky++; 
             textSkore.textContent = susenky;
-        }, 1000); // Exekuce (přidání sušenky) každých 1000 ms
+        }, 1000); 
     }
 });
 
